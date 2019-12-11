@@ -1,0 +1,67 @@
+/* Menu*/
+.cardimg{
+}
+/* Bateria*/
+@font-face {
+   font-family: agencyB;
+   src: url(font\AGENCYB.TTF);
+}
+.bimg {
+	margin:0px 70px;
+	width:100px;
+}
+#bcharge{
+	position: absolute;
+	width:200px;
+}
+#bstatus{
+	width:200px;
+	
+}
+
+#level{
+	position:absolute;
+	top:180px;
+	font-size:90px;
+	font-family: agencyB;
+	color:black;
+	text-align:center;
+}
+#dischargingTime{
+	position:absolute;
+	top:270px;
+	margin:0px 75px;
+	font-size:20px;
+	font-family: agencyB;
+	color:black;	
+	text-align:center;
+}
+/* Vibração */
+.shake {
+        animation: shake 1s 0 3;
+        background: #cc0000;
+		}
+    
+@keyframes shake {
+        5%,
+        45% {
+            transform: translateX(-1px);
+        }
+        10%,
+        40% {
+            transform: translateX(2px);
+        }
+        15%,
+        25%,
+        35% {
+            transform: translateX(-4px);
+        }
+        20%,
+        30% {
+            transform: translateX(4px);
+        }
+        50%,
+        100% {
+            transform: translateX(0);
+        }
+}
