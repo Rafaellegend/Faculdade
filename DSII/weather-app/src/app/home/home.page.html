@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ClimaTempo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="nome" name="nome" ></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+        <ion-label position="stacked">Idade</ion-label>
+        <ion-input type="number" [(ngModel)]="idade" name="idade"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label position="stacked">Cidade</ion-label>
+          <ion-input type="text" [(ngModel)]="climaService.cidadeorigem" name="cidade"   ></ion-input>
+      </ion-item>
+    
+
+  <ion-button expand="block" (click) ="pg72()"  >Clima nas Próximas 72 horas</ion-button>
+  <ion-button expand="block"  (click) ="pgclima7()">Clima em 7 dias</ion-button>
+  <ion-button expand="block" (click) ="pgmapa()">Mapa</ion-button>
+
+  
+  
+
+ <!--
+  <ion-list *ngFor="let item of climatempo.data">
+    <ion-card>
+
+        
+
+
+  <button block clear ion-item >
+          <ion-avatar item-left>
+             <img src="assets/imgs/imgperfil.jpg">
+          </ion-avatar>
+          <h2 class="balanced">{{item.temperature.min}}</h2>
+          <p>{{item.temperature.min}}</p>
+         
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+      
+  </button>
+</ion-card>
+</ion-list>   
+-->
+</ion-content>

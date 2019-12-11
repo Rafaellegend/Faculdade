@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Clima nas próximas 72 horas  {{climaService.cidadeorigem}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-list *ngFor="let item of climaService.clima.data">
+        <ion-card>
+
+
+
+            <ion-card-header>
+                <ion-card-title><h6>{{item.date_br}}</h6></ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+
+                 
+                  <p>Temp. Max: {{item.temperature.temperature}} </p>
+                  <p>Vel. do Vento {{item.wind.velocity}} </p>
+                  <!--  <p>Velocidade do vento   Max {{item.wind.velocity_max}} - {{item.wind.velocity_min}}</p>
+                  <p>Umidade   Max {{item.humidity.max}} - {{item.humidity.min}}</p>
+-->
+   
+
+
+              </ion-card-content>
+        </ion-card>
+      </ion-list>
+
+
+
+    <ion-label expand="right">   <ion-button class="" expand="clear"  (click)="voltar()">Voltar</ion-button></ion-label>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title>Clima em 7 dias   {{climaService.cidadeorigem}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+
+
+    <ion-list *ngFor="let item of clima.data">
+        <ion-card>
+
+
+
+            <ion-card-header>
+                <ion-card-title><h6>{{item.date_br }}</h6></ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                  <p>Temp. Maxima: {{item.temperature.max}} - {{item.temperature.min}}</p>
+                  <p>Vel. do Vento   Max {{item.wind.velocity_max}} - {{item.wind.velocity_min}}</p>
+                  <p>Umidade {{item.humidity.max}} - {{item.humidity.min}}</p>
+
+   
+
+
+              </ion-card-content>
+        </ion-card>
+      </ion-list>
+
+
+    <ion-label expand="right">   <ion-button class="" expand="clear"  (click)="voltar()">Retornar</ion-button></ion-label>
+
+</ion-content>
