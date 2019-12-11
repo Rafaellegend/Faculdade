@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DSII - Informações do Aparelho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css"  href = "CSS/estilo.css">
+  <link rel="stylesheet" type="text/css"  href = "CSS/bootstrap.min.css">
+  <script src="JS/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="container">
+<div class="card">
+	<div class="card-header"> 
+	<a href="index.html"><img src="img\icons\chevron-left.svg">voltar</a>
+	</div>
+</div>
+<!--Informações do Aparelho-->
+<div class="card">
+	<div class="card-header"> 
+	<p>Informações do Aparelho</p>
+	</div>
+	<div class="card-body">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="label">cordova</td>
+					<td id="cordova"></td>
+				</tr>
+				<tr>
+					<td class="label">model</td>
+					<td id="model"></td>
+				</tr>
+				<tr>
+					<td class="label">platform</td>
+					<td id="platform"></td>
+				</tr>
+				<tr>
+					<td class="label">uuid</td>
+					<td id="uuid"></td>
+				</tr>
+				<tr>
+					<td class="label">version</td>
+					<td id="version"></td>
+				</tr>
+				<tr>
+					<td class="label">manufacturer</td>
+					<td id="manufacturer"></td>
+				</tr>
+				<tr>
+					<td class="label">isVirtual</td>
+					<td id="isVirtual"></td>
+				</tr>
+				<tr>
+					<td class="label">serial</td>
+					<td id="serial"></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>		
+	</div>
+</div>
+<!--Informações do Bateria-->
+<div class="card">
+	<div class="card-header"> 
+	<p>Estado Bateria</p>
+	</div>
+	<div class="card-body">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="label">Energia da Bateria</td>
+					<td id="level">(battery level unknown)</td>
+				</tr>
+				<tr>
+					<td class="label">Nivel de Descarregamento</td>
+					<td id="dischargingTime">(discharging time unknown)</td>
+				</tr>
+				<tr>
+					<td class="label">Conectado/Desconectado</td>
+					<td id="charging">(charging state unknown)</td>
+				</tr>
+				<tr>
+					<td class="label">Estado de Energia</td>
+					<td id="bc">(no info)</td>
+				</tr>
+			</tbody>
+		</table>
+		<img src="" id="bcharge" hidden>
+			  <img src="img\Baterryfull.png" id="bstatus" hidden >
+	</div>
+</div>
+<!--Informações do Sensor de Movimento-->
+<div class="card">
+	<div class="card-header"> 
+	<p>Sensor de Movimento</p>
+	</div>
+	<div class="card-body">
+		<table class="time table">
+			<tbody>
+				<tr>
+					<td id="m">00</td>
+					<td>:</td>
+					<td id="s">00</td>
+					<td>:</td>
+					<td id="ms">000</td>
+				</tr>
+				<tr>
+					<td class="label" colspan="2">X</td>
+					<td class="value" colspan="3" id="x">0</td>
+				</tr>
+				<tr>
+					<td class="label" colspan="2">Y</td>
+					<td class="value" colspan="3" id="y">0</td>
+				</tr>
+				<tr>
+					<td class="label" colspan="2">Z</td>
+					<td class="value" colspan="3" id="z">0</td>
+				</tr>
+			</tbody>
+		</table>
+		<button id="watch" class="btn btn-secondary">Start</button>
+	</div>
+</div>
+<script src="JS/battery-statusFX.js"></script>
+<script src="JS/device.js"></script>
+<script src="JS/device-motion.js"></script>
+</body>
+</html>

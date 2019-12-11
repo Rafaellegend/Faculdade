@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DSII - Modulo de Camera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css"  href = "CSS/estilo.css">
+  <link rel="stylesheet" type="text/css"  href = "CSS/bootstrap.min.css">
+  <script src="JS/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#0a9bcf;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<nav class="navbar sticky-top bg-white">
+				<ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html"><img src="img\icons\chevron-left.svg">voltar</a>
+				</li>
+						
+				</nav>
+			</div>
+		</div>
+		
+           <h2>Modulo de Camera</h1>
+
+            <section class="main-content">
+                <p>
+				<div class="card">
+					<div class="card-body bg-primary">
+						<img src="img/empty.png" alt="" id="show-picture" class="img-fluid">
+					</div>
+				</div>
+                </p>
+				
+                <p>
+                    <input type="file" id="take-picture" accept="image/*" style="display: none";>
+					<input type="button" value="Tirar Foto" onclick="document.getElementById('take-picture').click();" class="btn btn-light" />
+                </p>
+
+                
+
+                <p id="error"></p>
+
+            </section>
+
+        </div>
+
+<style>*{backgroundcolor:blue;}</style>
+        <script src="js/camera.js"></script>
+
+
+</body>

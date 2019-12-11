@@ -25,7 +25,7 @@ app.browser = {
     },
 
     open: function() {
-        this.ref = cordova.InAppBrowser.open('http://cordova.apache.org', '_blank', this.options);
+        this.ref = cordova.InAppBrowser.open('https://github.com/Rafaellegend/Faculdade', '_blank', this.options);
         this.ref.addEventListener('loadstart', this.callBack.bind(this));
         this.ref.removeEventListener('loadstart', this.callback.bind(this));
     },

@@ -10,16 +10,16 @@
 	margin:0px 70px;
 	width:100px;
 }
-#bcharge{
+.bconnected{
 	position: absolute;
 	width:200px;
 }
-#bstatus{
+.blevelimg{
 	width:200px;
 	
 }
 
-#level{
+.blevel{
 	position:absolute;
 	top:180px;
 	font-size:90px;
@@ -27,7 +27,7 @@
 	color:black;
 	text-align:center;
 }
-#dischargingTime{
+.bdischarge{
 	position:absolute;
 	top:270px;
 	margin:0px 75px;
@@ -65,3 +65,34 @@
             transform: translateX(0);
         }
 }
+/*camera*/
+#photo {
+			height: 400px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+/*sensor*/
+  button.stop {
+        background: #cc0000;
+    }
+    table {
+        width: 100%;
+    }
+    #m, #s, #ms {
+        width: 30%;
+    }
+    .time {
+        text-align: center;
+        font-size: 30px;
+    }
+    .label {
+        text-transform: uppercase;
+        color: #666;
+        text-align: right;
+        font-size: 12px;
+        width: 30%;
+    }
+    .value {
+        font-size: 30px;
+    }
